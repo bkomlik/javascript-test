@@ -14,21 +14,19 @@
 
     <div class="scriptBox">
         <script>
-            console.log(43 + 945 + 234 + 23 + 95 + 634);
-            const sgl = 'Single quotes.';
-            const dbl = "Double quotes.";
-            console.log(sgl);
-            console.log(dbl);
-            const sglDbl = 'Would you eat a "fish supper"?';
-            const dblSgl = "I'm feeling Super.";
-            console.log(sglDbl);
-            console.log(dblSgl);
-            
+            const myString = '123';
+            const myNum = Number(myString);
+            let objNum = Number(123);
+            let x = 5;
+
+            console.log(typeof objNum);
+            console.log(x.toString());
+
             const button = document.querySelector('button');
 
             function greet() {
-            const name = prompt('What is your name?');
-            alert(`Hello ${name}, nice to see you!`);
+                const name = prompt('What is your name?');
+                alert(`Hello ${name}, nice to see you!`);
             }
 
             button.addEventListener('click', greet);
